@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94AC4246-C328-430D-9E34-C739E6452AEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZbirIgri</RootNamespace>
+    <AssemblyName>ZbirIgri</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Igrachi\Igrach.cs" />
+    <Compile Include="Igrachi\IgraciLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Igrachi\IgraciLista.Designer.cs">
+      <DependentUpon>IgraciLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KamenNozList\Rezultat.cs" />
+    <Compile Include="KamenNozList\RPSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KamenNozList\RPSForm.Designer.cs">
+      <DependentUpon>RPSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Milioner\DodadiBazaPrasanja.cs" />
+    <Compile Include="Milioner\MilionerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Milioner\MilionerForm.Designer.cs">
+      <DependentUpon>MilionerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Milioner\MilionerGame.cs" />
+    <Compile Include="Milioner\povikajPrijatel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Milioner\povikajPrijatel.designer.cs">
+      <DependentUpon>povikajPrijatel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Milioner\PrasajPublika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Milioner\PrasajPublika.Designer.cs">
+      <DependentUpon>PrasajPublika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Milioner\Prasanje.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Simon\SimonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simon\SimonForm.Designer.cs">
+      <DependentUpon>SimonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simon\SimonGame.cs" />
+    <Compile Include="Zmija\Krofna.cs" />
+    <Compile Include="Zmija\Krug.cs" />
+    <Compile Include="Zmija\SnakeGame.cs" />
+    <Compile Include="Zmija\Zmija.cs" />
+    <Compile Include="Zmija\ZmijaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zmija\ZmijaForm.Designer.cs">
+      <DependentUpon>ZmijaForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Igrachi\IgraciLista.resx">
+      <DependentUpon>IgraciLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KamenNozList\RPSForm.resx">
+      <DependentUpon>RPSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Milioner\MilionerForm.resx">
+      <DependentUpon>MilionerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Milioner\povikajPrijatel.resx">
+      <DependentUpon>povikajPrijatel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Milioner\PrasajPublika.resx">
+      <DependentUpon>PrasajPublika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Simon\SimonForm.resx">
+      <DependentUpon>SimonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zmija\ZmijaForm.resx">
+      <DependentUpon>ZmijaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors.jpg" />
+    <None Include="Resources\rock.jpg" />
+    <None Include="Resources\paper.jpg" />
+    <None Include="Sliki\happy.jpg" />
+    <None Include="Sliki\milionerpocetna.gif" />
+    <None Include="Sliki\milionerthinking.jpg" />
+    <None Include="Sounds\Millionaire.wav" />
+    <None Include="Sounds\Friend.wav" />
+    <None Include="Sounds\Question.wav" />
+    <None Include="Resources\bl_butt.gif" />
+    <None Include="Resources\blue.jpg" />
+    <None Include="Resources\blue1.jpg" />
+    <None Include="Resources\blue2.jpg" />
+    <None Include="Resources\blue-glow.jpg" />
+    <None Include="Resources\gr-butt.gif" />
+    <None Include="Resources\green.jpg" />
+    <None Include="Resources\green1.jpg" />
+    <None Include="Resources\green2.jpg" />
+    <None Include="Resources\green-glow.jpg" />
+    <None Include="Resources\krofna.png" />
+    <None Include="Resources\pn-butt.gif" />
+    <None Include="Resources\red.jpg" />
+    <None Include="Resources\red2.jpg" />
+    <None Include="Resources\red3.jpg" />
+    <None Include="Resources\red-glow.jpg" />
+    <None Include="Resources\yellow.jpg" />
+    <None Include="Resources\yellow1.jpg" />
+    <None Include="Resources\yellow2.jpg" />
+    <None Include="Resources\yellow-glow.jpg" />
+    <None Include="Resources\download.jpg" />
+    <None Include="Resources\Gjorgjevik_Dejan.jpg" />
+    <Content Include="Resources\images.jpg" />
+    <None Include="Resources\question-mark.jpg" />
+    <None Include="Resources\Madzarov_Gjorgji.jpg" />
+    <None Include="Resources\Madzarov_Gjorgji1.jpg" />
+    <None Include="Resources\Trajanov_Dimitar.jpg" />
+    <None Include="Sliki\fin_mil.jpg" />
+    <None Include="Sliki\money.jpg" />
+    <None Include="Sliki\thinking-hard.jpg" />
+    <None Include="Sliki\bl_butt.gif" />
+    <None Include="Sounds\bite.wav" />
+    <None Include="Sounds\correct.wav" />
+    <None Include="Sounds\error.wav" />
+    <Content Include="Sounds\secena.wav" />
+    <Content Include="Sounds\Speech On.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
