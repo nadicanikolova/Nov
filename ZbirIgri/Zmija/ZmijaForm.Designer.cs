@@ -40,6 +40,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.pictureBox1.BackgroundImage = global::ZbirIgri.Properties.Resources.grid;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(20, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);

@@ -229,9 +229,9 @@ namespace ZbirIgri.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap happy {
+        internal static System.Drawing.Bitmap grid {
             get {
-                object obj = ResourceManager.GetObject("happy", resourceCulture);
+                object obj = ResourceManager.GetObject("grid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -262,26 +262,6 @@ namespace ZbirIgri.Properties {
         internal static System.Drawing.Bitmap Madzarov_Gjorgji1 {
             get {
                 object obj = ResourceManager.GetObject("Madzarov_Gjorgji1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap milionerpocetna {
-            get {
-                object obj = ResourceManager.GetObject("milionerpocetna", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap milionerthinking {
-            get {
-                object obj = ResourceManager.GetObject("milionerthinking", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

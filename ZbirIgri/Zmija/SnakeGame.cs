@@ -20,36 +20,27 @@ namespace ZbirIgri
         public int Speed { get; set; }
         public int Poeni { get; set; }
         public Direction dir;
-        Random rand_X;
-        Random rand_Y;
+        Random rand;
         int pozX;
         int pozY;
-        public SnakeGame(Graphics g) {
+        public SnakeGame() {
             snake = new Zmija();
             dir = Direction.Right;
             snake.addCircle();
             snake.addCircle();
             snake.addCircle();
-            rand_X = new Random();
-            rand_Y = new Random();
-            pozX =(rand_X.Next(0,((int)g.DpiX-20)%20+1)*20);
-            pozY = (rand_Y.Next(0,((int)g.DpiY-20)%20+1)*20);
+            rand = new Random();
+            pozX = rand.Next(0,19)*20;
+            pozY = rand.Next(0, 19) * 20;
             food = new Krofna(pozX,pozY);
             Speed = 25;
             Poeni = 0;
 
         }
-        public void NovaKrofna(Graphics g)
+        public void NovaKrofna()
         {
-            rand_X = new Random();
-            rand_Y = new Random();
-            if ((((int)g.DpiX - 20) % 20 + 1) * 20 == 400)
-            pozX = (rand_X.Next(0, 380));
-            else
-            pozX = (rand_X.Next(0, ((int)g.DpiX - 20) % 20 + 1) * 20);
-            if ((((int)g.DpiY - 20) % 20 + 1) * 20==400)
-            pozY = (rand_Y.Next(0, 380));
-            pozY = (rand_Y.Next(0, ((int)g.DpiY - 20) % 20 + 1) * 20);
+            pozX = rand.Next(0, 19) * 20;
+            pozY = rand.Next(0, 19) * 20;
             food = new Krofna(pozX, pozY);
         }
         public void setDir(Keys key) {

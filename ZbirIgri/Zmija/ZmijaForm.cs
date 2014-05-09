@@ -31,11 +31,12 @@ namespace ZbirIgri
             Maxpoeni = 0;
             this.ime = ime;
             g = pictureBox1.CreateGraphics();
-            game = new SnakeGame(g);
+            game = new SnakeGame();
             prevX = game.snake.snake[0].X;
             prevY = game.snake.snake[0].Y;
             timer.Start();
             timer.Interval = 5000/ game.Speed;
+            this.DoubleBuffered = true;
         }
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
@@ -48,7 +49,7 @@ namespace ZbirIgri
                 pl.Play();
 
                 game.snake.addCircle();
-                game.NovaKrofna(g);
+                game.NovaKrofna();
                 game.Poeni++;
                 flag = true;
             }
@@ -131,7 +132,7 @@ namespace ZbirIgri
         {
             if (game.Poeni > Maxpoeni)
                 Maxpoeni = game.Poeni;
-            game = new SnakeGame(g);
+            game = new SnakeGame();
             timer.Interval = 5000 / game.Speed;
             flag = true;
             timer.Start();
