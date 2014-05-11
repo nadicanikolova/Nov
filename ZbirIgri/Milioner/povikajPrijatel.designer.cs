@@ -96,6 +96,7 @@
             this.Controls.Add(this.label1);
             this.Name = "povikajPrijatel";
             this.Text = "Повикај Пријател";
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 

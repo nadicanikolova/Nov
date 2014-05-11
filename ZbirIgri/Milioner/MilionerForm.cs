@@ -304,7 +304,8 @@ namespace ZbirIgri
         private void buttonPovikajPrijatel_Click(object sender, EventArgs e)
         {
             playFriend();
-            povikajPrijatel friend = new povikajPrijatel();
+            char c = proveriOdgovor();
+            povikajPrijatel friend = new povikajPrijatel(c);
             DialogResult r = friend.ShowDialog();
             buttonPovikajPrijatel.Enabled = false;
             if (r == System.Windows.Forms.DialogResult.Cancel)
@@ -501,7 +502,8 @@ namespace ZbirIgri
         {
             player.Stop();
             playFriend();
-            PrasajPublika pb = new PrasajPublika();
+            char d = proveriOdgovor();
+            PrasajPublika pb = new PrasajPublika(d);
             DialogResult r = pb.ShowDialog();
             if (r == System.Windows.Forms.DialogResult.Cancel)
             {
@@ -509,6 +511,27 @@ namespace ZbirIgri
                 playQuestion();
             }
             button1.Enabled = false;
+        }
+        private char proveriOdgovor()
+        {
+            
+            if (buttonOdgovor1.Text == momentalnoPrasanje.tocenOdgovor)
+            {
+               return 'A';
+            }
+            else if (buttonOdgovor3.Text == momentalnoPrasanje.tocenOdgovor)
+            {
+                return 'B';
+            }
+            else if (buttonOdgovor2.Text == momentalnoPrasanje.tocenOdgovor)
+            {
+                return 'C';
+            }
+            else if (buttonOdgovor4.Text == momentalnoPrasanje.tocenOdgovor)
+            {
+                return 'D';
+            }
+            return ' ';
         }
 
         private void buttonOdgovor1_MouseHover(object sender, EventArgs e)

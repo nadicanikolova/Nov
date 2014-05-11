@@ -16,10 +16,12 @@ namespace ZbirIgri.Milioner
         public int procent2 { set; get; }
         public int procent3 { set; get; }
         public int procent4 { set; get; }
-        public PrasajPublika()
+        public char tocenOdgovor { set; get; }
+        public PrasajPublika(char c)
         {
             InitializeComponent();
             timer1.Start();
+            tocenOdgovor = c;
         }
 
         public void izgenerirajProcenti()
@@ -27,11 +29,48 @@ namespace ZbirIgri.Milioner
             List<int> listaprocenti=new List<int>();
 
             Random r = new Random();
+
+            if (tocenOdgovor == 'A')
+            {
+                procent1 = r.Next(90, 100);
+                procent2 = r.Next(0, 100 - procent1);
+                procent3 = r.Next(0, 100 - (procent2 + procent1));
+                procent4 = 100 - (procent2 + procent1 + procent3);
+
+            }
+
+            else if (tocenOdgovor == 'B')
+            {
+                procent2 = r.Next(90, 100);
+                procent1 = r.Next(0, 100 - procent2);
+                procent3 = r.Next(0, 100 - (procent2 + procent1));
+                procent4 = 100 - (procent2 + procent1 + procent3);
+
+            }
+
+            else   if (tocenOdgovor == 'C')
+            {
+                procent3 = r.Next(90, 100);
+                procent2 = r.Next(0, 100 - procent3);
+                procent1 = r.Next(0, 100 - (procent3 + procent2));
+                procent4 = 100 - (procent2 + procent1 + procent3);
+
+            }
            
-            procent1 = r.Next(0, 101);
-            procent2 = r.Next(0, 101 - procent1);
-            procent3 = r.Next(0, 101 - (procent2 + procent1));
-            procent4 = 101 - (procent2 + procent1 + procent3);
+            if (tocenOdgovor == 'D')
+            {
+                procent4 = r.Next(90, 100);
+                procent1 = r.Next(0, 100 - procent4);
+                procent2= r.Next(0, 100 - (procent4 + procent1));
+                procent3 = 100 - (procent2 + procent1 + procent4);
+
+            }
+
+
+            if (procent1 < 0)
+            {
+                procent1 = 0;
+            }
             if (procent2 < 0)
             {
                 procent2 = 0;

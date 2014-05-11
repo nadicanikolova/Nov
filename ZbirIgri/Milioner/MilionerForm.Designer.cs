@@ -57,7 +57,7 @@
             this.listaSumi.Enabled = false;
             this.listaSumi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listaSumi.FormattingEnabled = true;
-            this.listaSumi.ItemHeight = 17;
+            this.listaSumi.ItemHeight = 20;
             this.listaSumi.Items.AddRange(new object[] {
             "3 000 000",
             "1 000 000",
@@ -69,23 +69,23 @@
             "     35 000",
             "     18 000",
             "     12 000",
-            "     10 000",
             "       5 000",
-            "       2 000",
             "       3 000",
-            "       1 000"});
-            this.listaSumi.Location = new System.Drawing.Point(649, 24);
-            this.listaSumi.Margin = new System.Windows.Forms.Padding(2);
+            "       2 000",
+            "       1 000",
+            "          750"});
+            this.listaSumi.Location = new System.Drawing.Point(865, 30);
+            this.listaSumi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listaSumi.Name = "listaSumi";
-            this.listaSumi.Size = new System.Drawing.Size(87, 259);
+            this.listaSumi.Size = new System.Drawing.Size(115, 304);
             this.listaSumi.TabIndex = 0;
             // 
             // buttonNovaIgra
             // 
-            this.buttonNovaIgra.Location = new System.Drawing.Point(19, 24);
-            this.buttonNovaIgra.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonNovaIgra.Location = new System.Drawing.Point(25, 30);
+            this.buttonNovaIgra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonNovaIgra.Name = "buttonNovaIgra";
-            this.buttonNovaIgra.Size = new System.Drawing.Size(104, 25);
+            this.buttonNovaIgra.Size = new System.Drawing.Size(139, 31);
             this.buttonNovaIgra.TabIndex = 2;
             this.buttonNovaIgra.Text = "Нова Игра?";
             this.buttonNovaIgra.UseVisualStyleBackColor = true;
@@ -94,10 +94,10 @@
             // buttonSlednoPrasanje
             // 
             this.buttonSlednoPrasanje.Enabled = false;
-            this.buttonSlednoPrasanje.Location = new System.Drawing.Point(631, 308);
-            this.buttonSlednoPrasanje.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSlednoPrasanje.Location = new System.Drawing.Point(841, 379);
+            this.buttonSlednoPrasanje.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSlednoPrasanje.Name = "buttonSlednoPrasanje";
-            this.buttonSlednoPrasanje.Size = new System.Drawing.Size(104, 42);
+            this.buttonSlednoPrasanje.Size = new System.Drawing.Size(139, 52);
             this.buttonSlednoPrasanje.TabIndex = 3;
             this.buttonSlednoPrasanje.Text = "Следно Прашање";
             this.buttonSlednoPrasanje.UseVisualStyleBackColor = true;
@@ -108,10 +108,10 @@
             // buttonPovikajPrijatel
             // 
             this.buttonPovikajPrijatel.Enabled = false;
-            this.buttonPovikajPrijatel.Location = new System.Drawing.Point(520, 150);
-            this.buttonPovikajPrijatel.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonPovikajPrijatel.Location = new System.Drawing.Point(693, 185);
+            this.buttonPovikajPrijatel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonPovikajPrijatel.Name = "buttonPovikajPrijatel";
-            this.buttonPovikajPrijatel.Size = new System.Drawing.Size(113, 25);
+            this.buttonPovikajPrijatel.Size = new System.Drawing.Size(151, 31);
             this.buttonPovikajPrijatel.TabIndex = 4;
             this.buttonPovikajPrijatel.Text = "Повикај го Томче";
             this.buttonPovikajPrijatel.UseVisualStyleBackColor = true;
@@ -123,10 +123,10 @@
             // 
             this.button50.Enabled = false;
             this.button50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button50.Location = new System.Drawing.Point(520, 102);
-            this.button50.Margin = new System.Windows.Forms.Padding(2);
+            this.button50.Location = new System.Drawing.Point(693, 126);
+            this.button50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(113, 25);
+            this.button50.Size = new System.Drawing.Size(151, 31);
             this.button50.TabIndex = 5;
             this.button50.Text = "50:50";
             this.button50.UseVisualStyleBackColor = true;
@@ -143,13 +143,13 @@
             this.labelaPrasanje.AutoSize = true;
             this.labelaPrasanje.BackColor = System.Drawing.Color.GhostWhite;
             this.labelaPrasanje.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelaPrasanje.Location = new System.Drawing.Point(174, 240);
-            this.labelaPrasanje.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.labelaPrasanje.MaximumSize = new System.Drawing.Size(450, 50);
-            this.labelaPrasanje.MinimumSize = new System.Drawing.Size(75, 8);
+            this.labelaPrasanje.Location = new System.Drawing.Point(232, 295);
+            this.labelaPrasanje.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.labelaPrasanje.MaximumSize = new System.Drawing.Size(600, 62);
+            this.labelaPrasanje.MinimumSize = new System.Drawing.Size(100, 10);
             this.labelaPrasanje.Name = "labelaPrasanje";
-            this.labelaPrasanje.Padding = new System.Windows.Forms.Padding(5);
-            this.labelaPrasanje.Size = new System.Drawing.Size(75, 26);
+            this.labelaPrasanje.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.labelaPrasanje.Size = new System.Drawing.Size(100, 32);
             this.labelaPrasanje.TabIndex = 10;
             this.labelaPrasanje.Text = "label1";
             this.labelaPrasanje.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -157,10 +157,10 @@
             // buttonOdgovor4
             // 
             this.buttonOdgovor4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOdgovor4.Location = new System.Drawing.Point(398, 351);
-            this.buttonOdgovor4.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonOdgovor4.Location = new System.Drawing.Point(531, 432);
+            this.buttonOdgovor4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonOdgovor4.Name = "buttonOdgovor4";
-            this.buttonOdgovor4.Size = new System.Drawing.Size(180, 39);
+            this.buttonOdgovor4.Size = new System.Drawing.Size(240, 48);
             this.buttonOdgovor4.TabIndex = 9;
             this.buttonOdgovor4.Text = "button6";
             this.buttonOdgovor4.UseVisualStyleBackColor = true;
@@ -173,21 +173,20 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(364, 302);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(485, 372);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(3);
-            this.label1.Size = new System.Drawing.Size(30, 26);
+            this.label1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.label1.Size = new System.Drawing.Size(39, 33);
             this.label1.TabIndex = 11;
             this.label1.Text = "B:";
             // 
             // buttonOdgovor3
             // 
             this.buttonOdgovor3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOdgovor3.Location = new System.Drawing.Point(398, 294);
-            this.buttonOdgovor3.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonOdgovor3.Location = new System.Drawing.Point(531, 362);
+            this.buttonOdgovor3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonOdgovor3.Name = "buttonOdgovor3";
-            this.buttonOdgovor3.Size = new System.Drawing.Size(180, 39);
+            this.buttonOdgovor3.Size = new System.Drawing.Size(240, 48);
             this.buttonOdgovor3.TabIndex = 7;
             this.buttonOdgovor3.Text = "button4";
             this.buttonOdgovor3.UseVisualStyleBackColor = true;
@@ -198,10 +197,10 @@
             // buttonOdgovor2
             // 
             this.buttonOdgovor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOdgovor2.Location = new System.Drawing.Point(141, 354);
-            this.buttonOdgovor2.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonOdgovor2.Location = new System.Drawing.Point(188, 436);
+            this.buttonOdgovor2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonOdgovor2.Name = "buttonOdgovor2";
-            this.buttonOdgovor2.Size = new System.Drawing.Size(160, 39);
+            this.buttonOdgovor2.Size = new System.Drawing.Size(213, 48);
             this.buttonOdgovor2.TabIndex = 8;
             this.buttonOdgovor2.Text = "button5";
             this.buttonOdgovor2.UseVisualStyleBackColor = true;
@@ -214,11 +213,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.GhostWhite;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(364, 359);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(485, 442);
             this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(3);
-            this.label2.Size = new System.Drawing.Size(31, 26);
+            this.label2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.label2.Size = new System.Drawing.Size(40, 33);
             this.label2.TabIndex = 12;
             this.label2.Text = "D:";
             // 
@@ -227,11 +225,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.GhostWhite;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(107, 302);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(143, 372);
             this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(3);
-            this.label4.Size = new System.Drawing.Size(30, 26);
+            this.label4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.label4.Size = new System.Drawing.Size(39, 33);
             this.label4.TabIndex = 14;
             this.label4.Text = "А:";
             // 
@@ -240,21 +237,20 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.GhostWhite;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(107, 361);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(143, 444);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(3);
-            this.label3.Size = new System.Drawing.Size(30, 26);
+            this.label3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.label3.Size = new System.Drawing.Size(41, 33);
             this.label3.TabIndex = 13;
             this.label3.Text = "C:";
             // 
             // buttonOdgovor1
             // 
             this.buttonOdgovor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOdgovor1.Location = new System.Drawing.Point(141, 294);
-            this.buttonOdgovor1.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonOdgovor1.Location = new System.Drawing.Point(188, 362);
+            this.buttonOdgovor1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonOdgovor1.Name = "buttonOdgovor1";
-            this.buttonOdgovor1.Size = new System.Drawing.Size(160, 39);
+            this.buttonOdgovor1.Size = new System.Drawing.Size(213, 48);
             this.buttonOdgovor1.TabIndex = 6;
             this.buttonOdgovor1.Text = "button3";
             this.buttonOdgovor1.UseVisualStyleBackColor = true;
@@ -264,10 +260,10 @@
             // 
             // btnZatvori
             // 
-            this.btnZatvori.Location = new System.Drawing.Point(19, 68);
-            this.btnZatvori.Margin = new System.Windows.Forms.Padding(2);
+            this.btnZatvori.Location = new System.Drawing.Point(25, 84);
+            this.btnZatvori.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnZatvori.Name = "btnZatvori";
-            this.btnZatvori.Size = new System.Drawing.Size(104, 25);
+            this.btnZatvori.Size = new System.Drawing.Size(139, 31);
             this.btnZatvori.TabIndex = 15;
             this.btnZatvori.Text = "Затвори прозорец";
             this.btnZatvori.UseVisualStyleBackColor = true;
@@ -275,10 +271,10 @@
             // 
             // buttonSeOtkazuva
             // 
-            this.buttonSeOtkazuva.Location = new System.Drawing.Point(19, 111);
-            this.buttonSeOtkazuva.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSeOtkazuva.Location = new System.Drawing.Point(25, 137);
+            this.buttonSeOtkazuva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSeOtkazuva.Name = "buttonSeOtkazuva";
-            this.buttonSeOtkazuva.Size = new System.Drawing.Size(103, 26);
+            this.buttonSeOtkazuva.Size = new System.Drawing.Size(137, 32);
             this.buttonSeOtkazuva.TabIndex = 16;
             this.buttonSeOtkazuva.Text = "Се откажувам";
             this.buttonSeOtkazuva.UseVisualStyleBackColor = true;
@@ -286,15 +282,14 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(520, 51);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(693, 63);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 25);
+            this.button1.Size = new System.Drawing.Size(151, 31);
             this.button1.TabIndex = 17;
             this.button1.Text = "Прашај судии";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            
             this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             // 
@@ -302,19 +297,19 @@
             // 
             this.pbSlika.BackgroundImage = global::ZbirIgri.Properties.Resources.fin_mil;
             this.pbSlika.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbSlika.Location = new System.Drawing.Point(177, 11);
-            this.pbSlika.Margin = new System.Windows.Forms.Padding(2);
+            this.pbSlika.Location = new System.Drawing.Point(236, 14);
+            this.pbSlika.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbSlika.Name = "pbSlika";
-            this.pbSlika.Size = new System.Drawing.Size(334, 227);
+            this.pbSlika.Size = new System.Drawing.Size(445, 279);
             this.pbSlika.TabIndex = 1;
             this.pbSlika.TabStop = false;
             // 
             // MilionerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(759, 420);
+            this.ClientSize = new System.Drawing.Size(1012, 517);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonSeOtkazuva);
             this.Controls.Add(this.btnZatvori);
@@ -333,7 +328,7 @@
             this.Controls.Add(this.buttonNovaIgra);
             this.Controls.Add(this.pbSlika);
             this.Controls.Add(this.listaSumi);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MilionerForm";
             this.Text = "ФИНКИ Милионер";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MilionerForm_FormClosing);

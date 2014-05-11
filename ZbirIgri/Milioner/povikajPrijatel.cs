@@ -15,33 +15,36 @@ namespace ZbirIgri
         public int odgovor { set; get; }
         public int vreme { set; get; }
         public string answer { set; get; }
-        public povikajPrijatel()
+        public char tocenOdgovor { set; get; }
+        public povikajPrijatel(char c)
         {
             InitializeComponent();
             timer1.Start();
-            generiraj();
+            tocenOdgovor = c;
             
+            generiraj();
+           
         }
         public void generiraj ()
         {
             Random r=new Random();
             odgovor=r.Next(4);
             procent = r.Next(100);
-            
-            if (odgovor == 0)
+       
+            if (tocenOdgovor=='A')
             {
                 answer = "A";
             }
-            else if (odgovor == 1)
+            else if (tocenOdgovor == 'B')
             {
                 answer = "B";
                
             }
-            else if (odgovor == 2)
+            else if (tocenOdgovor == 'C')
             {
                 answer = "C";
             }
-            else if (odgovor == 3)
+            else if (tocenOdgovor == 'D')
             {
                 answer = "D";
                
@@ -82,6 +85,7 @@ namespace ZbirIgri
             this.Close();
         }
 
+       
        
     }
 }
